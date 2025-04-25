@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Messenger</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <form id="login-form">
+            <h2>Login</h2>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button type="submit">Login</button>
+            <p>Don't have an account? <a href="#" id="signup-link">Sign up</a></p>
+        </form>
+        <form id="signup-form" style="display: none;">
+            <h2>Sign up</h2>
+            <input type="text" id="new-username" placeholder="Username">
+            <input type="password" id="new-password" placeholder="Password">
+            <button type="submit">Sign up</button>
+            <p>Already have an account? <a href="#" id="login-link">Login</a></p>
+        </form>
+    </div>
+    <div class="chat-container" style="display: none;">
+        <div class="chat-box">
+            <div id="chat-log"></div>
+            <input type="text" id="chat-input" placeholder="Type a message...">
+            <button id="send-btn">Send</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
